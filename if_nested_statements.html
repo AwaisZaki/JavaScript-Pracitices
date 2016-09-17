@@ -1,0 +1,46 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title>Nested IF</title>
+		
+		
+
+	</head>
+	
+	<body>
+		
+		<h1>Nested IF</h1>
+	
+		
+		<script type="text/javascript" >
+			
+			var name = prompt("Enter Your name: " + "");
+			var age = prompt("Enter Your age: " + "");
+			var drivTest = prompt("Driving Test Pass/Fail: " + "");
+			
+			if(age > 18){
+				
+				if(drivTest == "pass" || "Pass" || "PASS")
+					{
+						alert("Hello Mr. " + name + " your age is " +age + " You can get Permanent Lisence");
+					}
+				
+				
+			}
+			
+			if(age < 18){
+				
+				if(drivTest == "fail" || "Fail" || "FAIL")
+					{
+						alert("Hello Mr. " + name + " your age is " +age + " You can get Learning Lisence");
+					}
+				
+			}
+		
+		</script>
+	
+	
+	</body>
+</html>
+
