@@ -1,0 +1,120 @@
+<!Doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title>Arrays and for loop and push pop function</title>
+		
+		
+
+	</head>
+	
+	<body>
+		
+		<h1>Arrays and for loop and push pop function</h1>
+	
+		
+		<script type="text/javascript">
+			
+			var arr = ["a","b","c","d","e","f"];
+			document.write("this names are stored in an array list and this array is print by using <strong>for loop<\strong>");
+			
+			document.write("<br>Total size of the Array "+arr.length + "<br>");
+			
+			for(i=0; i<arr.length; i++)
+				
+				{
+					document.write(arr[i]+"\t");
+				}
+			arr.push("g");
+			arr.push("h");
+				
+			
+			document.write("<h1>Here  two element add at the end in the list that is <em>e</em> and <em>g</em> by using push Function </h1>");
+			document.write("Total size of the Array after adding two elements in the list "+arr.length);
+	
+			document.write("<br>"+arr[0]+"\t");
+			document.write(arr[1]+"\t");
+			document.write(arr[2]+"\t");
+			document.write(arr[3]+"\t");
+			document.write(arr[4]+"\t");
+			document.write(arr[5]+"\t");
+			document.write(arr[6]+"\t");
+			document.write(arr[7]+"\t");
+			
+			
+			document.write("<h1>Here one  element remove at the end in the list  that is <em>g</em>  by using pop Function </h1>");
+			
+			arr.pop();
+			 
+			document.write("Total size of the Array after removing one elements in the list "+arr.length+"<br>");
+			for(i=0; i<arr.length; i++)
+				
+				{
+					document.write(arr[i]+"\t");
+				}
+			
+			document.write("<h1>Here one  element remove from the start of the list  that is <em>a</em>  by using shift Function </h1>");
+			
+			arr.shift();
+			 
+			document.write("Total size of the Array after removing one elements in the list "+arr.length+"<br>");
+			for(i=0; i<arr.length; i++)
+				
+				{
+					document.write(arr[i]+"\t");
+				}
+			
+			document.write("<h1>Here two  element add from the start of the list  that is <em>0</em> <em>1</em>  by using unshift Function </h1>");
+			
+			arr.unshift("0","1");
+			 
+			document.write("Total size of the Array after add one elements in the start of the list "+arr.length+"<br>");
+			for(i=0; i<arr.length; i++)
+				
+				{
+					document.write(arr[i]+"\t");
+				}
+			
+			document.write("<h1>Here two  element add in the list by replacing index 2 and 3 that is <b>b</b> and <b>c</b> by using splice Function </h1>");
+			
+			arr.splice(2,2,"aa","bb");
+			 
+			document.write("Total size of the Array after replace two elements in the list "+arr.length+"<br>");
+			for(i=0; i<arr.length; i++)
+				
+				{
+					document.write(arr[i]+"\t");
+				}
+			
+			
+			document.write("<h1>Here two  element add in the list befor index 7 wihout replacing any element in the list by using splice Function </h1>");
+			
+			arr.splice(6,0,"cc","dd");
+			 
+			document.write("Total size of the Array after add two elements in the list "+arr.length+"<br>");
+			for(i=0; i<arr.length; i++)
+				
+				{
+					document.write(arr[i]+"\t");
+				}
+			
+			
+			document.write("<h1>Here two  element removing form the list after index 2 without adding any  element by using  splice Function </h1>");
+			
+			arr.splice(3,2);
+			 
+			document.write("Total size of the Array after add two elements in the list "+arr.length+"<br>");
+			for(i=0; i<arr.length; i++)
+				
+				{
+					document.write(arr[i]+"\t");
+				}
+			
+			
+			
+		</script>
+	
+	
+	</body>
+</html>
+
